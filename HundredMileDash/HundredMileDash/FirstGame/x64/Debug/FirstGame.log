@@ -1,0 +1,37 @@
+﻿  main.cpp
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(37,12): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(41,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(42,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(44,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(45,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(50,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\variables.hpp(51,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(69,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(69,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(98,10): warning C4305: '=': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(114,42): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(122,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(122,18): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(242,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\classes.hpp(245,115): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(26,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(55,6): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(82,73): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(82,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(83,91): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(83,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(98,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(100,80): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(100,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(162,23): warning C4305: '=': truncation from 'double' to 'float'
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(216,118): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(217,119): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(250,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(250,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(250,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(251,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(251,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(251,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\FirstGame\main.cpp(304,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  FirstGame.vcxproj -> C:\Games and Stuf\Coding\RayLib\FirstGame\FirstGame\x64\Debug\FirstGame.exe

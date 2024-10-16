@@ -1,0 +1,13 @@
+﻿  main.cpp
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(36,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(36,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(37,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(37,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(37,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(65,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(65,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(66,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(66,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(66,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\Eden\Eden\Project1\main.cpp(152,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Games and Stuf\Coding\RayLib\Eden\Eden\x64\Debug\Eden.exe
