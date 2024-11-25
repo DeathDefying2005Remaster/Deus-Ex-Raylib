@@ -278,6 +278,10 @@ int main()
 				particleEffects[i].DrawParticleEffect();
 			}
 
+			int turnstileW = 200;
+			int turnstileH = 60;
+			DrawRectangle((GetScreenWidth()/2 - turnstileW)/2, GetScreenHeight() - turnstileH, turnstileW, turnstileH, BLACK);
+
 			string strr = to_string(player.ghostFade);
 			DrawText(strr.c_str(), 100, 70, 20, DARKGRAY);
 			string str = to_string(player.rotation);

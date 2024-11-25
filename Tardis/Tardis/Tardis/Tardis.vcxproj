@@ -136,6 +136,7 @@
   <ItemGroup>
     <ClInclude Include="event.h" />
     <ClInclude Include="tardis.h" />
+    <ClInclude Include="tardis3.h" />
     <ClInclude Include="tardis2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

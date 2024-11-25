@@ -32,6 +32,9 @@
     <ClInclude Include="tardis2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="tardis3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="tardis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
