@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\machine.hpp(360,36): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\machine.hpp(360,36): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\machine.hpp(360,77): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\machine.hpp(360,77): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\main.cpp(72,16): warning C4305: '=': truncation from 'double' to 'float'
+  Blank Project.vcxproj -> C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\x64\Debug\V1vV2.exe

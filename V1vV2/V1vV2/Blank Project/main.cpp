@@ -1,0 +1,292 @@
+#include <raylib-cpp.hpp>
+#include "machine.hpp"
+#include "shapeDefiner.hpp"
+#include <algorithm>
+using namespace std;
+
+const int screenWidth = 800;
+const int screenHeight = 800;
+const int targetFps = 60;
+
+Camera2D camera;
+
+Machine machine = Machine({0, 0});
+float gravity = 25;
+
+vector<raylib::Rectangle> blocks = Box({ 0, 0 }, { 2000, 1500 }, 50);
+//vector<raylib::Rectangle> blocks = { raylib::Rectangle(-5000, 100, 10000, 50) };
+
+template <typename T> class ObjectPool
+{
+	public:
+
+	vector<T> pool;
+
+	void Add(T value)
+	{
+		pool.push_back(value);
+	}
+	void Remove(int index)
+	{
+		pool.erase(pool.begin() + index);
+	}
+	T& Get(int index)
+	{
+		return pool[index];
+	}
+};
+
+class BulletTrail
+{
+	public:
+
+	Vector2 origin;
+	Vector2 direction;
+	float length;
+	float speed;
+
+	BulletTrail(Vector2 _origin, Vector2 _direction, float _length, float _speed)
+	{
+		origin = _origin;
+		direction = _direction;
+		length = _length;
+		speed = _speed;
+	}
+
+	void Update()
+	{
+		length += speed * GetFrameTime();
+	}
+	void Draw()
+	{
+		DrawLineEx(origin, { origin.x + (direction.x * length), origin.y + (direction.y * length) }, 5, YELLOW);
+	}
+};
+ObjectPool<BulletTrail> bradPitt;
+
+void Start()
+{
+	camera.target = machine.position;
+	camera.offset = { screenWidth/2, screenHeight/2 };
+	camera.rotation = 0;
+	camera.zoom = 0.3;
+}
+
+void EnterGround(Vector2 moveInput)
+{
+	machine.velocity.y = 0;
+	if (machine.grounded == false)
+	{
+		//I get knocked down, but I get up again, you will never keep me down
+	}
+	machine.grounded = true;
+}
+void LeaveGround()
+{
+	if (machine.grounded == true)
+	{
+		//"Liftoff!" said the meat worm.
+		if (machine.velocity.x == 0)
+		{
+			machine.velocity.x += (machine.left ? -machine.appliedVelocity : machine.appliedVelocity);
+		}
+		else
+		{
+			float leFaktor = 600 / Clamp(abs(machine.velocity.x), 600, 1200);
+			machine.velocity.x += (machine.left ? -machine.appliedVelocity : machine.appliedVelocity) * leFaktor;
+		}
+		machine.appliedVelocity = 0;
+		machine.state = machine.idle;
+	}
+	machine.grounded = false;
+}
+
+void GroundCheck(Vector2 moveInput)
+{
+	for (int i = 0; i < blocks.size(); i++)
+	{
+		if (machine.rect.y + machine.rect.height >= blocks[i].y - machine.groundMargin && machine.rect.y < blocks[i].y)
+		{
+			if (machine.rect.x + machine.rect.width - 15 > blocks[i].x && machine.rect.x + 15 < blocks[i].x + blocks[i].width)
+			{
+				EnterGround(moveInput);
+				return;
+			}
+		}
+	}
+
+	LeaveGround();
+}
+
+/* void HorizontalMovement(Vector2 moveInput)
+{
+	float force = machine.state == machine.sliding ? machine.slideHorizontalForce : machine.horizontalForce;
+	float max = machine.state == machine.sliding ? machine.slideMaxHorizontalVelocity : machine.maxHorizontalVelocity;
+	float drag = machine.state == machine.sliding ? machine.slideDrag : machine.drag;
+
+	if (machine.state == machine.sliding && machine.grounded)
+	{
+		machine.appliedVelocity = machine.left ? -max : max;
+		//machine.velocity.x = machine.left ? -abs(machine.velocity.x) : abs(machine.velocity.x);
+	}
+	else if (machine.state != machine.sliding)
+	{
+		machine.appliedVelocity = moveInput.x * max;
+	}
+
+	if (machine.velocity.x > 0 && machine.left)
+	{
+		machine.velocity.x += machine.appliedVelocity;
+		if (machine.velocity.x < 0) { machine.velocity.x = 0; }
+		machine.position = Vector2Add(machine.position, Vector2Scale(machine.velocity, GetFrameTime()));
+	}
+	else if (machine.velocity.x < 0 && !machine.left)
+	{
+		machine.velocity.x += machine.appliedVelocity;
+		if (machine.velocity.x > 0) { machine.velocity.x = 0; }
+		machine.position = Vector2Add(machine.position, Vector2Scale(machine.velocity, GetFrameTime()));
+	}
+	else
+	{
+		float scaledAppliedVelocity = Clamp(abs(machine.appliedVelocity), 0, Clamp(max - abs(machine.velocity.x), 0, max));
+		Vector2 scaledForce = { machine.velocity.x + scaledAppliedVelocity * (machine.left ? -1 : 1), machine.velocity.y };
+		machine.position = Vector2Add(machine.position, Vector2Scale(scaledForce, GetFrameTime()));
+	}
+
+	if (machine.velocity.x != 0 && machine.grounded)
+	{
+		machine.velocity.x *= Clamp(1 - (GetFrameTime() * machine.mainDrag / abs(machine.velocity.x)), 0, 1);
+	}
+
+	DrawText(to_string(machine.velocity.x).c_str(), 20, 20, 20, BLACK);
+	DrawText(to_string(machine.appliedVelocity).c_str(), 200, 20, 20, BLACK);
+} */
+
+void Shoot(Vector2 input)
+{
+	machine.shootTimer = machine.shootCooldown;
+	machine.shootDir = input;
+	BulletTrail trail = BulletTrail(machine.position, Vector2Normalize({ input.x, -input.y }), 0, 400);
+	bradPitt.Add(trail);
+}
+
+int main()
+{
+	//---- Start ----//
+	Start();
+
+	InitWindow(screenWidth, screenHeight, "WAKE UP");
+	SetTargetFPS(targetFps);
+
+	while (!WindowShouldClose())
+	{
+		//---- Input ----//
+		Vector2 moveInput = Vector2();
+		if (IsKeyDown(KEY_A)) { moveInput.x -= 1; }
+		if (IsKeyDown(KEY_D)) { moveInput.x += 1; }
+
+		if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_RIGHT) || IsKeyPressed(KEY_UP))
+		{
+			Vector2 attackInput = Vector2();
+			if (IsKeyPressed(KEY_LEFT)) { attackInput.x -= 1; }
+			if (IsKeyPressed(KEY_RIGHT)) { attackInput.x += 1; }
+			if (IsKeyPressed(KEY_UP)) { attackInput.y = 1; }
+			Shoot(attackInput);
+		}
+
+		//---- Handle States ----//
+		if (moveInput.x < 0) { machine.left = true; }
+		else if (moveInput.x > 0) { machine.left = false; }
+
+		if (IsKeyPressed(KEY_LEFT_CONTROL)) { machine.state = machine.sliding; }
+		if (IsKeyReleased(KEY_LEFT_CONTROL)) { machine.state = machine.idle; }
+		
+		else if (moveInput.x != 0 && machine.state != machine.sliding) { machine.state = machine.running; }
+		else if (machine.state != machine.sliding) { machine.state = machine.idle; }
+			
+		//---- Movement ----//
+		if (!machine.grounded)
+		{
+			machine.velocity.y += gravity;
+		}
+		machine.HorizontalMovement2(moveInput);
+
+		//---- Grounded Stuff and Collisions ----//
+		machine.rect = raylib::Rectangle(machine.position.x - 50, machine.position.y - 50, 100, 50 + 64 * 3 * 0.5);
+		for (int i = 0; i < blocks.size(); i++)
+		{
+			if (machine.rect.x > blocks[i].x - machine.rect.width && machine.rect.x < blocks[i].x + blocks[i].width)
+			{
+				if (machine.rect.y > blocks[i].y - machine.rect.height && machine.rect.y < blocks[i].y + blocks[i].height)
+				{
+					//check each crossover and pick smallest one
+					float left = blocks[i].x - (machine.rect.x + machine.rect.width);
+					float right = (blocks[i].x + blocks[i].width) - machine.rect.x;
+					float up = blocks[i].y - (machine.rect.y + machine.rect.height);
+					float down = (blocks[i].y + blocks[i].height) - machine.rect.y;
+					vector<float> arrgh = { abs(left), abs(right), abs(up), abs(down) };
+					float min = *min_element(arrgh.begin(), arrgh.end());
+					if (min == abs(left) || min == abs(right))
+					{
+						machine.position.x += min == abs(left) ? -min : min;
+						if (machine.wallJumpTimer == 0) { machine.velocityBuffer = machine.velocity; }
+						machine.velocity.x = 0;
+						machine.wallJumpTimer = machine.wallJumpBuffer;
+					}
+					else
+					{
+						machine.position.y += min == abs(up) ? -min : min;
+						machine.velocityBuffer = machine.velocity;
+						machine.velocity.y = 0;
+					}
+				}
+			}
+		}
+		GroundCheck(moveInput);
+		DrawText(to_string(machine.grounded).c_str(), 400, 20, 20, BLACK);
+
+		//---- Input 2: Electric Boogaloo ----//
+		if (IsKeyPressed(KEY_SPACE))
+		{
+			if (machine.grounded)
+			{
+				machine.Jump();
+			}
+			else if (machine.WallCheck(blocks) != 0)
+			{
+				machine.WallJump(machine.WallCheck(blocks));
+			}
+		}
+
+		//---- Timers ----//
+		machine.Timers();
+
+		DrawText(to_string(machine.state).c_str(), 500, 20, 20, BLACK);
+
+		//---- Rendering ----//
+		BeginDrawing();
+
+		ClearBackground(GRAY);
+		//camera.target = machine.position;
+		BeginMode2D(camera);
+
+		machine.Draw();
+		for (int i = 0; i < blocks.size(); i++)
+		{
+			DrawRectangleRec(blocks[i], BLACK);
+		}
+		//DrawRectangleRec(machine.rect, RED);
+		for (int i = 0; i < bradPitt.pool.size(); i++)
+		{
+			bradPitt.Get(i).Update();
+			bradPitt.Get(i).Draw();
+		}
+
+		EndMode2D();
+		EndDrawing();
+	}
+
+	CloseWindow();
+
+	return 0;
+}

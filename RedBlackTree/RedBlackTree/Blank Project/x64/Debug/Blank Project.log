@@ -1,0 +1,19 @@
+﻿  main.cpp
+C:\Games and Stuf\Coding\RayLib\RedBlackTree\RedBlackTree\Blank Project\redblacktree.hpp(53,66): error C3447: second operand to the conditional operator ?: is of type 'void', but the third operand is neither a throw-expression nor of type 'void'
+  (compiling source file 'main.cpp')
+      C:\Games and Stuf\Coding\RayLib\RedBlackTree\RedBlackTree\Blank Project\redblacktree.hpp(53,66):
+      the template instantiation context (the oldest one first) is
+          C:\Games and Stuf\Coding\RayLib\RedBlackTree\RedBlackTree\Blank Project\main.cpp(11,19):
+          see reference to class template instantiation 'RedBlackTree<int>' being compiled
+          C:\Games and Stuf\Coding\RayLib\RedBlackTree\RedBlackTree\Blank Project\redblacktree.hpp(36,7):
+          while compiling class template member function 'void RedBlackTree<int>::Insert(T)'
+          with
+          [
+              T=int
+          ]
+              C:\Games and Stuf\Coding\RayLib\RedBlackTree\RedBlackTree\Blank Project\main.cpp(21,13):
+              see the first reference to 'RedBlackTree<int>::Insert' in 'Start'
+  
+C:\Games and Stuf\Coding\RayLib\RedBlackTree\RedBlackTree\Blank Project\redblacktree.hpp(57,68): error C3447: second operand to the conditional operator ?: is of type 'void', but the third operand is neither a throw-expression nor of type 'void'
+  (compiling source file 'main.cpp')
+  

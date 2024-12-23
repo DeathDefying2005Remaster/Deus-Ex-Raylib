@@ -112,3 +112,14 @@ class PlayerTardis
 		}
 	}
 };
+
+template <typename T> class GenericTardis
+{
+	public:
+
+	vector<TardisValue<T>> lists;
+
+	int currentIndex;
+
+
+};

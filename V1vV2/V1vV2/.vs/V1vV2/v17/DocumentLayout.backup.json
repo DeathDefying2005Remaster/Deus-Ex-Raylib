@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\machine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\shapeDefiner.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\shapeDefiner.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 300,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "shapeDefiner.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\shapeDefiner.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\shapeDefiner.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\shapeDefiner.hpp",
+              "RelativeToolTip": "Blank Project\\shapeDefiner.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T06:46:17.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "machine.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\machine.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp",
+              "RelativeToolTip": "Blank Project\\machine.hpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAIgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-01T05:20:29.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp",
+              "RelativeDocumentMoniker": "Blank Project\\main.cpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp",
+              "RelativeToolTip": "Blank Project\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-01T05:18:33.377Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
