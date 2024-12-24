@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\playerData.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\playerData.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\client.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\client.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\playerData.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\playerData.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\server.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "playerData.hpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\playerData.hpp",
               "RelativeDocumentMoniker": "Blank Project\\playerData.hpp",
@@ -38,8 +38,7 @@
               "RelativeToolTip": "Blank Project\\playerData.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-19T00:09:48.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T00:09:48.995Z"
             },
             {
               "$type": "Document",
@@ -64,18 +63,17 @@
               "RelativeToolTip": "Blank Project\\server.hpp",
               "ViewState": "AgIAACkAAAAAAAAAAAAAADUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-17T08:53:23.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T08:53:23.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "client.hpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\client.hpp",
               "RelativeDocumentMoniker": "Blank Project\\client.hpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\client.hpp",
               "RelativeToolTip": "Blank Project\\client.hpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-13T04:22:31.987Z",
               "EditorCaption": ""

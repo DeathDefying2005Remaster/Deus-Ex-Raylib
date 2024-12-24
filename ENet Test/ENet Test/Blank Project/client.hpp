@@ -69,7 +69,7 @@ class Client
 
 		char peerCount = atof(countStr);
 
-		for (int i = 0; i < peerCount; i++)
+		for (int i = 0; i < peerCount - 1; i++)
 		{
 			char xStr2[11];
 			char yStr2[11];
@@ -80,9 +80,9 @@ class Client
 
 			Vector2 pos = { atof(xStr2), atof(yStr2) };
 
-			if (peerInfo->size() < i + 1)
+			if (peerInfo->size() < i + 2)
 			{
-				peerInfo->push_back(PlayerData((enet_uint32)idStr, pos));
+				peerInfo->push_back(PlayerData((enet_uint32)atof(idStr), pos));
 			}
 			peerInfo->at(i + 1).position.x = pos.x;
 			peerInfo->at(i + 1).position.y = pos.y;
