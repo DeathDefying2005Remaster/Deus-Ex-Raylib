@@ -136,7 +136,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="client.hpp" />
+    <ClCompile Include="networking.hpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="server.hpp" />
     <ClCompile Include="socketShenanigans.hpp" />

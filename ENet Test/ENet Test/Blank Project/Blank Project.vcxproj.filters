@@ -21,7 +21,7 @@
     <ClCompile Include="socketShenanigans.hpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="client.hpp">
+    <ClCompile Include="networking.hpp">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="server.hpp">

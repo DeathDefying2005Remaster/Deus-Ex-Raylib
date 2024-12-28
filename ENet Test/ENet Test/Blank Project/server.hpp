@@ -49,14 +49,28 @@ class Server
 		return result;
 	}
 
+	std::string FloatToString(float value)
+	{
+		std::string str = std::to_string(value);
+		while (str.length() < 10)
+		{
+			str.append("0");
+		}
+		while (str.length() > 10)
+		{
+			str.erase(str.end());
+		}
+		return str;
+	}
+
 	void SendPacket(ENetPeer* _peer, Vector2 position, std::vector<PlayerData>* clientInfo)
 	{
-		std::string bongo = std::to_string((unsigned char)clientInfo->size()) + "|" + std::to_string(position.x) + " " + std::to_string(position.y) + "|";
+		std::string bongo = std::to_string((unsigned char)clientInfo->size()) + "|" + FloatToString(position.x) + " " + FloatToString(position.y) + "|";
 		for (int i = 0; i < clientInfo->size(); i++)
 		{
 			if (clientInfo->at(i).connectId != _peer->connectID)
 			{
-				std::string caca = std::to_string(clientInfo->at(i).position.x) + " " + std::to_string(clientInfo->at(i).position.y)
+				std::string caca = FloatToString(clientInfo->at(i).position.x) + " " + FloatToString(clientInfo->at(i).position.y)
 					+ ":" + std::to_string(clientInfo->at(i).connectId) + "|";
 				bongo.append(caca);
 			}

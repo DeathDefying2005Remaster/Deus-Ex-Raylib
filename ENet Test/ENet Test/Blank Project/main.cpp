@@ -5,9 +5,7 @@
 #define NOUSER            // All USER defines and routines
 #endif
 
-#include "client.hpp"
-#include "server.hpp"
-#include "playerData.hpp"
+#include "networking.hpp"
 
 #if defined(_WIN32)           // raylib uses these names as function parameters
 #undef near
@@ -16,8 +14,8 @@
 
 using namespace std;
 
-const int screenWidth = 800;
-const int screenHeight = 800;
+const int screenWidth = 960;
+const int screenHeight = 540;
 const int targetFps = 60;
 
 Camera2D camera;
@@ -29,7 +27,7 @@ Server server;
 
 Vector2 position;
 vector<PlayerData> peerInfo;
-float speed = 4;
+float speed = 400;
 
 void Start()
 {
@@ -84,7 +82,7 @@ int main()
 				moveInput.y += 1;
 			}
 
-			position = Vector2Add(position, Vector2Scale(moveInput, speed));
+			position = Vector2Add(position, Vector2Scale(moveInput, speed * GetFrameTime()));
 		}
 
 		if (type == 1) { client.RunClient(&peerInfo, position); }

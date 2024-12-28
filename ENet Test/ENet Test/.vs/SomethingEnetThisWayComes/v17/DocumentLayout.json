@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\client.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\client.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\playerData.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\playerData.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\server.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\server.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,50 +22,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "playerData.hpp",
-              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\playerData.hpp",
-              "RelativeDocumentMoniker": "Blank Project\\playerData.hpp",
-              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\playerData.hpp",
-              "RelativeToolTip": "Blank Project\\playerData.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-19T00:09:48.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\main.cpp",
               "RelativeDocumentMoniker": "Blank Project\\main.cpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\main.cpp",
               "RelativeToolTip": "Blank Project\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-11T10:47:37.862Z",
+              "WhenOpened": "2024-12-28T01:16:22.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "server.hpp",
-              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\server.hpp",
-              "RelativeDocumentMoniker": "Blank Project\\server.hpp",
-              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\server.hpp",
-              "RelativeToolTip": "Blank Project\\server.hpp",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAADUAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-17T08:53:23.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "client.hpp",
-              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\client.hpp",
-              "RelativeDocumentMoniker": "Blank Project\\client.hpp",
-              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\client.hpp",
-              "RelativeToolTip": "Blank Project\\client.hpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEcAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "networking.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\networking.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\networking.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\ENet Test\\ENet Test\\Blank Project\\networking.hpp",
+              "RelativeToolTip": "Blank Project\\networking.hpp",
+              "ViewState": "AgIAABAAAAAAAAAAAAASwBwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-13T04:22:31.987Z",
               "EditorCaption": ""
