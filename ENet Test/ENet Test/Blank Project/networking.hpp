@@ -16,6 +16,7 @@
 #include <raylib-cpp.hpp>
 #include <cstdint>
 #include <cstddef>
+#include <charconv>
 #include <vector>
 using namespace std;
 
@@ -32,13 +33,18 @@ using namespace std;
 //
 //	T value;
 //
-//	NetworkVariable<enet_uint32>()
+//	NetworkVariable(T _value)
 //	{
-//
+//		value = _value;
 //	}
-//	NetworkVariable<Vector2>()
-//	{
 //
+//	string Pack()
+//	{
+//		return "";
+//	}
+//	string Pack<float>()
+//	{
+//		return "";
 //	}
 //};
 
@@ -56,18 +62,164 @@ class PlayerData
 	}
 };
 
-inline Vector2 UnpackVector2(enet_uint8* data)
+inline float UnDeStringificatorFloat(enet_uint8* data, int start, int count)
 {
-	char xStr[11];
-	char yStr[11];
-	strncpy_s(xStr, (char*)data, 10);
-	strncpy_s(yStr, (char*)data + 11, 10);
-
-	Vector2 result;
-	result.y = atof(yStr);
-	result.x = atof(xStr);
-	return result;
+	string str = "";
+	for (int i = start; i < start + count; i++)
+	{
+		str += (char)data[i];
+	}
+	float goo = stof(str);
+	return goo;
 }
+inline enet_uint32 UnDeStringificator32(enet_uint8* data, int start)
+{
+	string str = "";
+	for (int i = start; i < start + 10; i++)
+	{
+		if ((char)data[i] == '|')
+		{
+			break;
+		}
+		str += data[i];
+	}
+	return stoul(str);
+}
+inline enet_uint8 UnDeStringificator8(enet_uint8* data, int start, int count)
+{
+	string str = "";
+	for (int i = start; i < start + count; i++)
+	{
+		str += data[i];
+	}
+	return stoi(str);
+}
+inline Vector2 UnDeStringificatorV2(enet_uint8* data, int start)
+{
+	string str = "";
+	string str2 = "";
+	for (int i = 0; i < 10; i++)
+	{
+		str += data[i];
+		str2 += data[i + 11];
+	}
+	return { stof(str), stof(str2) };
+}
+
+inline Vector2 UnpackVector2(enet_uint8* data, int start)
+{
+	float x = UnDeStringificatorFloat(data, start + 2, 10);
+	float y = UnDeStringificatorFloat(data, start + 13, 10);
+	return { x, y };
+}
+
+inline string PackVar(Vector2 v)
+{
+	string x = to_string(v.x);
+	while (x.length() < 10) { x.append("0"); }
+	while (x.length() > 10) { x.erase(x.end()); }
+	string y = to_string(v.y);
+	while (y.length() < 10) { y.append("0"); }
+	while (y.length() > 10) { y.erase(y.end()); }
+	return "V " + x + " " + y;
+}
+inline string PackVar(enet_uint32 v)
+{
+	string str = to_string(v);
+	while (str.length() < 10)
+	{
+		str.insert(0, "0");
+	}
+	return "I " + str;
+}
+inline string PackVar(bool v)
+{
+	return "B " + to_string(v);
+}
+
+inline string ClientPacketPack(vector<PlayerData>* peerInfo, ENetPeer* peer, Vector2 position)
+{
+	string str = PackVar(position);
+	return str;
+}
+inline void ClientPacketUnpack(vector<PlayerData>* peerInfo, ENetEvent event)
+{
+	for (int i = 0; i < peerInfo->size(); i++)
+	{
+		if (peerInfo->at(i).connectId == event.peer->connectID)
+		{
+			peerInfo->at(i).position = UnpackVector2(event.packet->data, 0);
+			break;
+		}
+	}
+}
+inline string ServerPacketPack(vector<PlayerData>* peerInfo, ENetPeer* peer, Vector2 position)
+{
+	string bongo = to_string((unsigned char)peerInfo->size()) + "|";
+	bongo += PackVar(position) + "|";
+	for (int i = 0; i < peerInfo->size(); i++)
+	{
+		if (peerInfo->at(i).connectId != peer->connectID)
+		{
+			string caca = PackVar(peerInfo->at(i).position);
+			caca += ":" + PackVar(peerInfo->at(i).connectId) + "|";
+			bongo.append(caca);
+		}
+	}
+	return bongo;
+}
+inline void ServerPacketUnpack(vector<PlayerData>* peerInfo, enet_uint8* data)
+{
+	// 1|V 400.000000 400.000000:I 535313532
+	int owners = UnDeStringificator8(data, 0, 1);
+	Vector2 serverPos = UnpackVector2(data, 2);
+	for (int i = 0; i < peerInfo->size(); i++)
+	{
+		if (peerInfo->at(i).connectId == 0)
+		{
+			peerInfo->at(i).position = serverPos;
+		}
+	}
+
+	if (peerInfo->size() == 0)
+	{
+		PlayerData info = PlayerData(0, serverPos);
+		peerInfo->push_back(info);
+	}
+
+	for (int i = 0; i < owners - 1; i++)
+	{
+		enet_uint32 id = UnDeStringificator32(data, 52 + (37 * i));
+		Vector2 position = UnpackVector2(data, 26 + (37 * i));
+		bool johnnycage = false;
+		for (int j = 0; j < peerInfo->size(); j++)
+		{
+			if (peerInfo->at(j).connectId == id)
+			{
+				peerInfo->at(j).position = position;
+				johnnycage = true;
+			}
+		}
+		if (!johnnycage)
+		{
+			PlayerData info = PlayerData(id, position);
+			peerInfo->push_back(info);
+		}
+	}
+}
+
+//inline Vector2 UnpackVector2(enet_uint8* data)
+//{
+//	char xStr[11];
+//	char yStr[11];
+//	strncpy_s(xStr, (char*)data, 10);
+//	strncpy_s(yStr, (char*)data + 11, 10);
+//
+//	Vector2 result;
+//	result.y = atof(yStr);
+//	result.x = atof(xStr);
+//	return result;
+//}
 
 inline string FloatToString(float value)
 {
@@ -101,8 +253,8 @@ class Server
 	{
 		char xStr[11];
 		char yStr[11];
-		strncpy_s(xStr, (char*)event.packet->data, 10);
-		strncpy_s(yStr, (char*)event.packet->data + 11, 10);
+		strncpy_s(xStr, (char*)data, 10);
+		strncpy_s(yStr, (char*)data + 11, 10);
 
 		Vector2 result;
 		result.y = atof(yStr);
@@ -198,7 +350,7 @@ class Server
 					event.packet->data,
 					event.peer->data,
 					event.channelID);
-				RecieveClientPositions(event, clientInfo);
+				ClientPacketUnpack(clientInfo, event);
 				break;
 			case ENET_EVENT_TYPE_DISCONNECT:
 				printf("Client %x:%u disconnected.\n", event.peer->address.host, event.peer->address.host);
@@ -206,9 +358,17 @@ class Server
 			}
 		}
 
-		for (int i = 0; i < peers.size(); i++)
+		/*for (int i = 0; i < peers.size(); i++)
 		{
 			SendPacket(peers[i], serverPos, clientInfo);
+		}*/
+
+		for (int i = 0; i < peers.size(); i++)
+		{
+			string caca = ServerPacketPack(clientInfo, peers[i], serverPos);
+			const char* c = caca.c_str();
+			ENetPacket* packet = enet_packet_create(c, strlen(c) + 1, ENET_PACKET_FLAG_RELIABLE);
+			enet_peer_send(peers[i], 0, packet);
 		}
 	}
 
@@ -339,10 +499,14 @@ class Client
 							event.packet->data,
 							event.peer->data,
 							event.channelID);
-					RecievePositions(event.packet->data, peerInfo);
+					ServerPacketUnpack(peerInfo, event.packet->data);
 			}
 		}
-		SendPacket(peer, clientPos);
+		
+		string caca = ClientPacketPack(peerInfo, peer, clientPos);
+		const char* c = caca.c_str();
+		ENetPacket* packet = enet_packet_create(c, strlen(c) + 1, ENET_PACKET_FLAG_RELIABLE);
+		enet_peer_send(peer, 0, packet);
 	}
 
 	int DisconnectClient()

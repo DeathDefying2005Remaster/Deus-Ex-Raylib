@@ -1,59 +1,76 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (ENet Test.vcxproj, SomethingUDPThisWayComes.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   main.cpp
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(67,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(260,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(68,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(261,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(108,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(348,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
   (compiling source file 'main.cpp')
-  
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(109,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(196,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
-  (compiling source file 'main.cpp')
-      C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(196,12):
+      C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(348,12):
       consider using '%zu' in the format string
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(196,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(348,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(254,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(414,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(255,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(415,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(257,18): warning C4244: 'initializing': conversion from 'double' to 'char', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(417,18): warning C4244: 'initializing': conversion from 'double' to 'char', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(268,24): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,24): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(268,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(268,37): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,37): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(268,37): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,37): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(269,19): warning C4244: 'initializing': conversion from 'double' to 'enet_uint32', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(429,19): warning C4244: 'initializing': conversion from 'double' to 'enet_uint32', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(337,13): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(497,13): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
   (compiling source file 'main.cpp')
-      C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(337,13):
+      C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(497,13):
       consider using '%zu' in the format string
   
-C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(337,13): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(497,13): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
   (compiling source file 'main.cpp')
   
 C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\main.cpp(110,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\main.cpp(110,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\main.cpp(112,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\main.cpp(112,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  networking.hpp
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(260,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(261,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(348,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+      C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(348,12):
+      consider using '%zu' in the format string
+  
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(348,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(414,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(415,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(417,18): warning C4244: 'initializing': conversion from 'double' to 'char', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,24): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,37): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(428,37): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(429,19): warning C4244: 'initializing': conversion from 'double' to 'enet_uint32', possible loss of data
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(497,13): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+      C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(497,13):
+      consider using '%zu' in the format string
+  
+C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\Blank Project\networking.hpp(497,13): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Blank Project.vcxproj -> C:\Games and Stuf\Coding\RayLib\ENet Test\ENet Test\x64\Debug\SomethingEnetThisWayComes.exe
