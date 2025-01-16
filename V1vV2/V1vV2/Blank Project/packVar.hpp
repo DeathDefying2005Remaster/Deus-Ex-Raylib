@@ -4,11 +4,11 @@ using namespace std;
 string PackVar(Vector2 v)
 {
 	string x = to_string(v.x);
-	while (x.length() < 10) { x.append("0"); }
-	while (x.length() > 10) { x.erase(x.end()); }
+	/*while (x.length() < 10) { x.append("0"); }
+	while (x.length() > 10) { x.erase(x.end()); }*/
 	string y = to_string(v.y);
-	while (y.length() < 10) { y.append("0"); }
-	while (y.length() > 10) { y.erase(y.end()); }
+	/*while (y.length() < 10) { y.append("0"); }
+	while (y.length() > 10) { y.erase(y.end()); }*/
 	return "V " + x + " " + y + ":";
 }
 string PackVar(enet_uint32 v)
@@ -24,14 +24,19 @@ string PackVar(bool v)
 {
 	return "B " + to_string(v) + ":";
 }
+
 void UnpackVar(string str, Vector2* v)
 {
 	string strX = "";
 	string strY = "";
-	for (int i = 2; i < 12; i++)
+	size_t border = str.find(' ', 2);
+	for (int j = 2; j < border; j++)
 	{
-		strX += str[i];
-		strY += str[i + 11];
+		strX += str[j];
+	}
+	for (int j = border + 1; j < str.length(); j++)
+	{
+		strY += str[j];
 	}
 	*v = { stof(strX), stof(strY) };
 }
