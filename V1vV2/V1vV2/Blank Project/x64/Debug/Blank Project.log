@@ -11,5 +11,25 @@ C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\machine.hpp(360,77): w
 C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\machine.hpp(360,77): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\main.cpp(72,16): warning C4305: '=': truncation from 'double' to 'float'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\charconv(12): warning STL4038: The contents of <charconv> are available only with C++17 or later.
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(80,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(222,13): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+  (compiling source file 'main.cpp')
+      C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(222,13):
+      consider using '%zu' in the format string
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(222,13): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(300,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+  (compiling source file 'main.cpp')
+      C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(300,12):
+      consider using '%zu' in the format string
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\networking2.hpp(300,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\Blank Project\main.cpp(93,16): warning C4305: '=': truncation from 'double' to 'float'
   Blank Project.vcxproj -> C:\Games and Stuf\Coding\RayLib\V1vV2\V1vV2\x64\Debug\V1vV2.exe

@@ -1,6 +1,20 @@
+#if defined(_WIN32)           
+#define NOGDI             // All GDI defines and routines
+#define NOUSER            // All USER defines and routines
+#endif
+
+#include <enet/enet.h>
+
+#if defined(_WIN32)           // raylib uses these names as function parameters
+#undef near
+#undef far
+#undef PlaySound
+#endif
+
 #include <raylib-cpp.hpp>
 #include "machine.hpp"
 #include "shapeDefiner.hpp"
+#include "networking2.hpp"
 #include <algorithm>
 using namespace std;
 
@@ -15,6 +29,13 @@ float gravity = 25;
 
 vector<raylib::Rectangle> blocks = Box({ 0, 0 }, { 2000, 1500 }, 50);
 //vector<raylib::Rectangle> blocks = { raylib::Rectangle(-5000, 100, 10000, 50) };
+
+Server server;
+Client client;
+int type = 0;
+
+NetworkVariable<Vector2> player1Pos;
+NetworkVariable<Vector2> player2Pos;
 
 template <typename T> class ObjectPool
 {
@@ -175,7 +196,7 @@ int main()
 	//---- Start ----//
 	Start();
 
-	InitWindow(screenWidth, screenHeight, "WAKE UP");
+	InitWindow(screenWidth, screenHeight, "someone's getting fired");
 	SetTargetFPS(targetFps);
 
 	while (!WindowShouldClose())
@@ -192,6 +213,48 @@ int main()
 			if (IsKeyPressed(KEY_RIGHT)) { attackInput.x += 1; }
 			if (IsKeyPressed(KEY_UP)) { attackInput.y = 1; }
 			Shoot(attackInput);
+		}
+
+		if (IsKeyPressed(KEY_H))
+		{
+			if (type == 0)
+			{
+				type = 1;
+				server = Server();
+				server.Start();
+				player1Pos = NetworkVariable<Vector2>({200, 200}, 1, true, &server, &player1Pos);
+				player2Pos = NetworkVariable<Vector2>({200, 200}, 2, false, &server, &player2Pos);
+			}
+			else
+			{
+				server.Kill();
+			}
+		}
+		else if (IsKeyPressed(KEY_C))
+		{
+			if (type == 0)
+			{
+				type = 2;
+				client = Client();
+				client.Start();
+				player1Pos = NetworkVariable<Vector2>({200, 200}, 1, false, &client, &player1Pos);
+				player2Pos = NetworkVariable<Vector2>({200, 200}, 2, true, &client, &player2Pos);
+			}
+			else
+			{
+				client.Kill();
+			}
+		}
+
+		if (type == 1) 
+		{
+			player1Pos.value = machine.position;
+			server.Run(); 
+		}
+		else if (type == 2) 
+		{ 
+			player2Pos.value = machine.position;
+			client.Run(); 
 		}
 
 		//---- Handle States ----//
@@ -281,6 +344,9 @@ int main()
 			bradPitt.Get(i).Update();
 			bradPitt.Get(i).Draw();
 		}
+
+		DrawCircleV(player1Pos.value, 20, BLUE);
+		DrawCircleV(player2Pos.value, 20, RED);
 
 		EndMode2D();
 		EndDrawing();

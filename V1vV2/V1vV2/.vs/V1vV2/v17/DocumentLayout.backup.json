@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\packVar.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\packVar.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\machine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -26,27 +38,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "shapeDefiner.hpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\shapeDefiner.hpp",
               "RelativeDocumentMoniker": "Blank Project\\shapeDefiner.hpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\shapeDefiner.hpp",
               "RelativeToolTip": "Blank Project\\shapeDefiner.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T06:46:17.466Z"
+              "WhenOpened": "2024-12-09T06:46:17.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "machine.hpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp",
               "RelativeDocumentMoniker": "Blank Project\\machine.hpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp",
               "RelativeToolTip": "Blank Project\\machine.hpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAIgAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T05:20:29.136Z"
+              "WhenOpened": "2024-12-01T05:20:29.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,10 +70,59 @@
               "RelativeDocumentMoniker": "Blank Project\\main.cpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp",
               "RelativeToolTip": "Blank Project\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAP4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-01T05:18:33.377Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "networking.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\networking.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking.hpp",
+              "RelativeToolTip": "Blank Project\\networking.hpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-10T00:20:36.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "networking2.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\networking2.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp",
+              "RelativeToolTip": "Blank Project\\networking2.hpp",
+              "ViewState": "AgIAABYBAAAAAAAAAAAwwIQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-14T04:19:27.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "packVar.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\packVar.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\packVar.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\packVar.hpp",
+              "RelativeToolTip": "Blank Project\\packVar.hpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-14T05:17:26.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 80,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
