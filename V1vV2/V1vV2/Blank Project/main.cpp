@@ -3,14 +3,6 @@
 #define NOUSER            // All USER defines and routines
 #endif
 
-#include <enet/enet.h>
-
-#if defined(_WIN32)           // raylib uses these names as function parameters
-#undef near
-#undef far
-#undef PlaySound
-#endif
-
 #include <raylib-cpp.hpp>
 #include "machine.hpp"
 #include "shapeDefiner.hpp"
@@ -138,50 +130,6 @@ void GroundCheck(Vector2 moveInput)
 
 	LeaveGround();
 }
-
-/* void HorizontalMovement(Vector2 moveInput)
-{
-	float force = machine.state == machine.sliding ? machine.slideHorizontalForce : machine.horizontalForce;
-	float max = machine.state == machine.sliding ? machine.slideMaxHorizontalVelocity : machine.maxHorizontalVelocity;
-	float drag = machine.state == machine.sliding ? machine.slideDrag : machine.drag;
-
-	if (machine.state == machine.sliding && machine.grounded)
-	{
-		machine.appliedVelocity = machine.left ? -max : max;
-		//machine.velocity.x = machine.left ? -abs(machine.velocity.x) : abs(machine.velocity.x);
-	}
-	else if (machine.state != machine.sliding)
-	{
-		machine.appliedVelocity = moveInput.x * max;
-	}
-
-	if (machine.velocity.x > 0 && machine.left)
-	{
-		machine.velocity.x += machine.appliedVelocity;
-		if (machine.velocity.x < 0) { machine.velocity.x = 0; }
-		machine.position = Vector2Add(machine.position, Vector2Scale(machine.velocity, GetFrameTime()));
-	}
-	else if (machine.velocity.x < 0 && !machine.left)
-	{
-		machine.velocity.x += machine.appliedVelocity;
-		if (machine.velocity.x > 0) { machine.velocity.x = 0; }
-		machine.position = Vector2Add(machine.position, Vector2Scale(machine.velocity, GetFrameTime()));
-	}
-	else
-	{
-		float scaledAppliedVelocity = Clamp(abs(machine.appliedVelocity), 0, Clamp(max - abs(machine.velocity.x), 0, max));
-		Vector2 scaledForce = { machine.velocity.x + scaledAppliedVelocity * (machine.left ? -1 : 1), machine.velocity.y };
-		machine.position = Vector2Add(machine.position, Vector2Scale(scaledForce, GetFrameTime()));
-	}
-
-	if (machine.velocity.x != 0 && machine.grounded)
-	{
-		machine.velocity.x *= Clamp(1 - (GetFrameTime() * machine.mainDrag / abs(machine.velocity.x)), 0, 1);
-	}
-
-	DrawText(to_string(machine.velocity.x).c_str(), 20, 20, 20, BLACK);
-	DrawText(to_string(machine.appliedVelocity).c_str(), 200, 20, 20, BLACK);
-} */
 
 void Shoot(Vector2 input)
 {
