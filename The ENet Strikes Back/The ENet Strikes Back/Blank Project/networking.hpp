@@ -169,7 +169,7 @@ class Client : public MotherOfTheTrucker
 
 	Client() {}
 
-	int Start()
+	int Start(string connectAddress)
 	{
 		if (enet_initialize() != 0)
 		{
@@ -185,7 +185,7 @@ class Client : public MotherOfTheTrucker
 			return EXIT_FAILURE;
 		}
 
-		enet_address_set_host(&address, "127.0.0.1");
+		enet_address_set_host(&address, connectAddress.c_str());
 		address.port = 7777;
 
 		peer = enet_host_connect(client, &address, 1, 0);
@@ -197,14 +197,18 @@ class Client : public MotherOfTheTrucker
 
 		if (enet_host_service(client, &event, 5000) > 0 && event.type == ENET_EVENT_TYPE_CONNECT)
 		{
-			puts("Connection to 127.0.0.1:7777 succeeded. Yay!");
+			printf("Connection to ");
+			printf(connectAddress.c_str());
+			printf(" succeeded. Yay!\n");
 			enet_host_flush(client);
 		}
 		else
 		{
 			enet_peer_reset(peer);
-			puts("Connection to 127.0.0.1:7777 failed. Awwww dangit.");
-			return EXIT_SUCCESS;
+			printf("Connection to ");
+			printf(connectAddress.c_str());
+			printf(" failed. Awwww dangit.\n");
+			return EXIT_FAILURE;
 		}
 
 		return EXIT_SUCCESS;

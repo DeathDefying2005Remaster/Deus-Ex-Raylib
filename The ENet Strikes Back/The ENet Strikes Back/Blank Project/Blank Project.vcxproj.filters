@@ -26,5 +26,8 @@
     <ClInclude Include="networking.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="inputField.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
