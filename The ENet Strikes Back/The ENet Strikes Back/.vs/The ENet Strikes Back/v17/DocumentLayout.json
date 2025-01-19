@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "networking.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\networking.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\networking.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\networking.hpp",
+              "RelativeToolTip": "Blank Project\\networking.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-19T07:38:11.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\main.cpp",
+              "RelativeDocumentMoniker": "Blank Project\\main.cpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\main.cpp",
+              "RelativeToolTip": "Blank Project\\main.cpp",
+              "ViewState": "AgIAAEQAAAAAAAAAAADgv1YAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-19T07:36:21.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
