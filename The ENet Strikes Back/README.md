@@ -1,0 +1,1 @@
+Press H on one instance of the application to start a host. Press C on another to join. Only one client can join currently. Arrow keys to move. You can press D to disconnect if you want but it just leaves the other player with a still corpse.
