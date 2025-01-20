@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Previous IPDB not found, fall back to full compilation.
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Blank Project.vcxproj -> C:\Games and Stuf\Coding\RayLib\Blank Project\Blank Project\x64\Release\Blank Project.exe
