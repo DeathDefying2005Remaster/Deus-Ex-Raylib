@@ -158,211 +158,45 @@ class Machine
 		float scaleFactor = 3;
 
 		Rectangle sourceRec = Rectangle();
-		if (left)
-		{
-			if (shootTimer == 0)
-			{
-				switch (state)
-				{
-				case idle:
-					sourceRec = { 0, 0, (float)frameWidth, (float)frameHeight };
-					break;
-				case running:
-					runTimer += GetFrameTime();
-					if (runTimer > runInterval) { runTimer = 0; }
-					if (runTimer < runInterval / 2)
-					{
-						sourceRec = { (float)frameWidth * 8, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else
-					{
-						sourceRec = { (float)frameWidth * 10, 0, (float)frameWidth, (float)frameHeight };
-					}
-					break;
-				case sliding:
-					sourceRec = { (float)frameWidth * 12, 0, (float)frameWidth, (float)frameHeight };
-					break;
-				}
-			}
-			else
-			{
-				if (state == idle || state == running)
-				{
-					if (Vector2Equals(shootDir, { 0, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 16, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 14, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 15, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 2, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 27, 0, (float)frameWidth, (float)frameHeight };
-					}
-				}
-				else if (state == sliding && left)
-				{
-					if (Vector2Equals(shootDir, { 0, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 17, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 18, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 19, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 21, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 20, 0, (float)frameWidth, (float)frameHeight };
-					}
-				}
-				else if (state == sliding && !left)
-				{
-					if (Vector2Equals(shootDir, { 0, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 24, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 23, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 25, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 22, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 26, 0, (float)frameWidth, (float)frameHeight };
-					}
-				}
-			}
-		}
-		else
-		{
-			if (shootTimer == 0)
-			{
-				switch (state)
-				{
-				case idle:
-					sourceRec = { (float)frameWidth * 6, 0, (float)frameWidth, (float)frameHeight };
-					break;
-				case running:
-					runTimer += GetFrameTime();
-					if (runTimer > runInterval) { runTimer = 0; }
-					if (runTimer < runInterval / 2)
-					{
-						sourceRec = { (float)frameWidth * 9, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else
-					{
-						sourceRec = { (float)frameWidth * 11, 0, (float)frameWidth, (float)frameHeight };
-					}
-					break;
-				case sliding:
-					sourceRec = { (float)frameWidth * 13, 0, (float)frameWidth, (float)frameHeight };
-					break;
-				}
-			}
-			else
-			{
-				if (state == idle || state == running)
-				{
-					if (Vector2Equals(shootDir, { 0, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 16, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 14, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 15, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 2, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 27, 0, (float)frameWidth, (float)frameHeight };
-					}
-				}
-				else if (state == sliding && left)
-				{
-					if (Vector2Equals(shootDir, { 0, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 17, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 18, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 19, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 21, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 20, 0, (float)frameWidth, (float)frameHeight };
-					}
-				}
-				else if (state == sliding && !left)
-				{
-					if (Vector2Equals(shootDir, { 0, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 24, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 23, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 1 }))
-					{
-						sourceRec = { (float)frameWidth * 25, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { -1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 22, 0, (float)frameWidth, (float)frameHeight };
-					}
-					else if (Vector2Equals(shootDir, { 1, 0 }))
-					{
-						sourceRec = { (float)frameWidth * 26, 0, (float)frameWidth, (float)frameHeight };
-					}
-				}
-			}
-		}
-
 		Rectangle destRec = { position.x - frameWidth*scaleFactor*0.5, position.y - frameHeight*scaleFactor*0.5, scaleFactor * frameWidth, scaleFactor * frameHeight };
 		Vector2 origin = { 0, 0 };
 		int rotation = 0;
 
 		Texture2D sheet = LoadTextureFromImage(sheetImage);
 		DrawTexturePro(sheet, sourceRec, destRec, origin, (float)rotation, WHITE);
+	}
+
+	void Collision(vector<raylib::Rectangle> blocks)
+	{
+		for (int i = 0; i < blocks.size(); i++)
+		{
+			if (rect.x > blocks[i].x - rect.width && rect.x < blocks[i].x + blocks[i].width)
+			{
+				if (rect.y > blocks[i].y - rect.height && rect.y < blocks[i].y + blocks[i].height)
+				{
+					//check each crossover and pick smallest one
+					float left = blocks[i].x - (rect.x + rect.width);
+					float right = (blocks[i].x + blocks[i].width) - rect.x;
+					float up = blocks[i].y - (rect.y + rect.height);
+					float down = (blocks[i].y + blocks[i].height) - rect.y;
+					vector<float> arrgh = { abs(left), abs(right), abs(up), abs(down) };
+					float min = *min_element(arrgh.begin(), arrgh.end());
+					if (min == abs(left) || min == abs(right))
+					{
+						position.x += min == abs(left) ? -min : min;
+						if (wallJumpTimer == 0) { velocityBuffer = velocity; }
+						velocity.x = 0;
+						wallJumpTimer = wallJumpBuffer;
+					}
+					else
+					{
+						position.y += min == abs(up) ? -min : min;
+						velocityBuffer = velocity;
+						velocity.y = 0;
+					}
+				}
+			}
+		}
 	}
 
 	void Jump()
@@ -376,11 +210,59 @@ class Machine
 		left = side == 1 ? true : false;
 	}
 
+	void EnterGround(Vector2 moveInput)
+	{
+		velocity.y = 0;
+		if (grounded == false)
+		{
+			//I get knocked down, but I get up again, you will never keep me down
+		}
+		grounded = true;
+	}
+	void LeaveGround()
+	{
+		if (grounded == true)
+		{
+			//"Liftoff!" said the meat worm.
+			if (velocity.x == 0)
+			{
+				velocity.x += (left ? -appliedVelocity : appliedVelocity);
+			}
+			else
+			{
+				float leFaktor = 600 / Clamp(abs(velocity.x), 600, 1200);
+				velocity.x += (left ? -appliedVelocity : appliedVelocity) * leFaktor;
+			}
+			appliedVelocity = 0;
+			state = idle;
+		}
+		grounded = false;
+	}
+
+	void GroundCheck(Vector2 moveInput, vector<raylib::Rectangle> blocks)
+	{
+		for (int i = 0; i < blocks.size(); i++)
+		{
+			if (rect.y + rect.height >= blocks[i].y - groundMargin && rect.y < blocks[i].y)
+			{
+				if (rect.x + rect.width - 15 > blocks[i].x && rect.x + 15 < blocks[i].x + blocks[i].width)
+				{
+					EnterGround(moveInput);
+					return;
+				}
+			}
+		}
+
+		LeaveGround();
+	}
+
 	void Timers()
 	{
 		wallJumpTimer -= GetFrameTime();
 		if (wallJumpTimer < 0) { wallJumpTimer = 0; }
 		shootTimer -= GetFrameTime();
 		if (shootTimer < 0) { shootTimer = 0; }
+		runTimer += GetFrameTime();
+		if (runTimer >= runInterval) { runTimer = 0; }
 	}
 };

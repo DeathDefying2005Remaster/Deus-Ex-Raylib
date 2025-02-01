@@ -7,11 +7,12 @@
 #include "machine.hpp"
 #include "shapeDefiner.hpp"
 #include "networking2.hpp"
+#include "chassis.hpp"
 #include <algorithm>
 using namespace std;
 
-const int screenWidth = 800;
-const int screenHeight = 800;
+const int screenWidth = 1920;
+const int screenHeight = 1080;
 const int targetFps = 60;
 
 Camera2D camera;
@@ -19,7 +20,7 @@ Camera2D camera;
 Machine machine = Machine({0, 0});
 float gravity = 25;
 
-vector<raylib::Rectangle> blocks = Box({ 0, 0 }, { 2000, 1500 }, 50);
+vector<raylib::Rectangle> blocks = Box({ 0, 0 }, { 800, 500 }, 25);
 //vector<raylib::Rectangle> blocks = { raylib::Rectangle(-5000, 100, 10000, 50) };
 
 Server server;
@@ -55,20 +56,33 @@ class BulletTrail
 
 	Vector2 origin;
 	Vector2 direction;
+	float lifespan;
+	float timer;
 	float length;
-	float speed;
 
-	BulletTrail(Vector2 _origin, Vector2 _direction, float _length, float _speed)
+	BulletTrail(Vector2 _origin, Vector2 _direction, float _lifespan)
 	{
 		origin = _origin;
 		direction = _direction;
-		length = _length;
-		speed = _speed;
+		lifespan = _lifespan;
+		timer = 0;
+
+		for (int i = 0; i < blocks.size(); i++)
+		{
+			Vector3 originbutnot = { origin.x, origin.y, 0 };
+			Vector3 directionbutnot = { direction.x, direction.y, 0 };
+			Vector3 pos = { blocks[i].GetPosition().x, blocks[i].GetPosition().y, 0 };
+			Vector3 pos2 = { blocks[i].GetPosition().x + blocks[i].width, blocks[i].GetPosition().y + blocks[i].height, 0 };
+			BoundingBox box = raylib::BoundingBox(pos, pos2);
+			RayCollision col = GetRayCollisionBox(raylib::Ray(originbutnot, directionbutnot), box);
+			if (col.hit) { length = col.distance; }
+			else { length = 2000; }
+		}
 	}
 
 	void Update()
 	{
-		length += speed * GetFrameTime();
+		timer += GetFrameTime();
 	}
 	void Draw()
 	{
@@ -82,60 +96,13 @@ void Start()
 	camera.target = machine.position;
 	camera.offset = { screenWidth/2, screenHeight/2 };
 	camera.rotation = 0;
-	camera.zoom = 0.3;
+	camera.zoom = 2;
 }
 
-void EnterGround(Vector2 moveInput)
-{
-	machine.velocity.y = 0;
-	if (machine.grounded == false)
-	{
-		//I get knocked down, but I get up again, you will never keep me down
-	}
-	machine.grounded = true;
-}
-void LeaveGround()
-{
-	if (machine.grounded == true)
-	{
-		//"Liftoff!" said the meat worm.
-		if (machine.velocity.x == 0)
-		{
-			machine.velocity.x += (machine.left ? -machine.appliedVelocity : machine.appliedVelocity);
-		}
-		else
-		{
-			float leFaktor = 600 / Clamp(abs(machine.velocity.x), 600, 1200);
-			machine.velocity.x += (machine.left ? -machine.appliedVelocity : machine.appliedVelocity) * leFaktor;
-		}
-		machine.appliedVelocity = 0;
-		machine.state = machine.idle;
-	}
-	machine.grounded = false;
-}
-
-void GroundCheck(Vector2 moveInput)
-{
-	for (int i = 0; i < blocks.size(); i++)
-	{
-		if (machine.rect.y + machine.rect.height >= blocks[i].y - machine.groundMargin && machine.rect.y < blocks[i].y)
-		{
-			if (machine.rect.x + machine.rect.width - 15 > blocks[i].x && machine.rect.x + 15 < blocks[i].x + blocks[i].width)
-			{
-				EnterGround(moveInput);
-				return;
-			}
-		}
-	}
-
-	LeaveGround();
-}
-
-void Shoot(Vector2 input)
+void Shoot()
 {
 	machine.shootTimer = machine.shootCooldown;
-	machine.shootDir = input;
-	BulletTrail trail = BulletTrail(machine.position, Vector2Normalize({ input.x, -input.y }), 0, 400);
+	BulletTrail trail = BulletTrail(machine.position, Vector2Normalize({ machine.shootDir.x, -machine.shootDir.y }), 10);
 	bradPitt.Add(trail);
 }
 
@@ -146,6 +113,7 @@ int main()
 
 	InitWindow(screenWidth, screenHeight, "someone's getting fired");
 	SetTargetFPS(targetFps);
+	ToggleFullscreen();
 
 	while (!WindowShouldClose())
 	{
@@ -154,13 +122,21 @@ int main()
 		if (IsKeyDown(KEY_A)) { moveInput.x -= 1; }
 		if (IsKeyDown(KEY_D)) { moveInput.x += 1; }
 
-		if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_RIGHT) || IsKeyPressed(KEY_UP))
+		Vector2 shootDir = Vector2();
+		if (IsKeyPressed(KEY_LEFT)) { shootDir.x -= 1; }
+		if (IsKeyPressed(KEY_RIGHT)) { shootDir.x += 1; }
+		if (IsKeyPressed(KEY_UP)) { shootDir.y = 1; }
+		if (!Vector2Equals(shootDir, {}))
 		{
-			Vector2 attackInput = Vector2();
-			if (IsKeyPressed(KEY_LEFT)) { attackInput.x -= 1; }
-			if (IsKeyPressed(KEY_RIGHT)) { attackInput.x += 1; }
-			if (IsKeyPressed(KEY_UP)) { attackInput.y = 1; }
-			Shoot(attackInput);
+			machine.shootDir = shootDir;
+			Shoot();
+		}
+		else
+		{
+			if (machine.shootTimer <= 0)
+			{
+				machine.shootDir = shootDir;
+			}
 		}
 
 		if (IsKeyPressed(KEY_H))
@@ -184,7 +160,7 @@ int main()
 			{
 				type = 2;
 				client = Client();
-				client.Start();
+				client.Start("");
 				player1Pos = NetworkVariable<Vector2>({200, 200}, 1, false, &client, &player1Pos);
 				player2Pos = NetworkVariable<Vector2>({200, 200}, 2, true, &client, &player2Pos);
 			}
@@ -223,37 +199,9 @@ int main()
 		machine.HorizontalMovement2(moveInput);
 
 		//---- Grounded Stuff and Collisions ----//
-		machine.rect = raylib::Rectangle(machine.position.x - 50, machine.position.y - 50, 100, 50 + 64 * 3 * 0.5);
-		for (int i = 0; i < blocks.size(); i++)
-		{
-			if (machine.rect.x > blocks[i].x - machine.rect.width && machine.rect.x < blocks[i].x + blocks[i].width)
-			{
-				if (machine.rect.y > blocks[i].y - machine.rect.height && machine.rect.y < blocks[i].y + blocks[i].height)
-				{
-					//check each crossover and pick smallest one
-					float left = blocks[i].x - (machine.rect.x + machine.rect.width);
-					float right = (blocks[i].x + blocks[i].width) - machine.rect.x;
-					float up = blocks[i].y - (machine.rect.y + machine.rect.height);
-					float down = (blocks[i].y + blocks[i].height) - machine.rect.y;
-					vector<float> arrgh = { abs(left), abs(right), abs(up), abs(down) };
-					float min = *min_element(arrgh.begin(), arrgh.end());
-					if (min == abs(left) || min == abs(right))
-					{
-						machine.position.x += min == abs(left) ? -min : min;
-						if (machine.wallJumpTimer == 0) { machine.velocityBuffer = machine.velocity; }
-						machine.velocity.x = 0;
-						machine.wallJumpTimer = machine.wallJumpBuffer;
-					}
-					else
-					{
-						machine.position.y += min == abs(up) ? -min : min;
-						machine.velocityBuffer = machine.velocity;
-						machine.velocity.y = 0;
-					}
-				}
-			}
-		}
-		GroundCheck(moveInput);
+		SetMachineRect(&machine);
+		machine.Collision(blocks);
+		machine.GroundCheck(moveInput, blocks);
 		DrawText(to_string(machine.grounded).c_str(), 400, 20, 20, BLACK);
 
 		//---- Input 2: Electric Boogaloo ----//
@@ -280,21 +228,19 @@ int main()
 		ClearBackground(GRAY);
 		//camera.target = machine.position;
 		BeginMode2D(camera);
-
-		machine.Draw();
+			
 		for (int i = 0; i < blocks.size(); i++)
 		{
 			DrawRectangleRec(blocks[i], BLACK);
 		}
-		//DrawRectangleRec(machine.rect, RED);
+		SetMachineRect(&machine);
+		DrawRectangleRec(machine.rect, RED);
+		DrawMachine(&machine);
 		for (int i = 0; i < bradPitt.pool.size(); i++)
 		{
 			bradPitt.Get(i).Update();
 			bradPitt.Get(i).Draw();
 		}
-
-		DrawCircleV(player1Pos.value, 20, BLUE);
-		DrawCircleV(player2Pos.value, 20, RED);
 
 		EndMode2D();
 		EndDrawing();

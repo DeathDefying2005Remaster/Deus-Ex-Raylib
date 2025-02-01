@@ -21,8 +21,11 @@
     <ClCompile Include="shapeDefiner.hpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="networking.hpp">
+    <ClCompile Include="chassis.hpp">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chassis.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -33,9 +36,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="networking2.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="packVar.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

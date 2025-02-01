@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\chassis.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\chassis.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\shapeDefiner.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\shapeDefiner.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\machine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\chassis.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\chassis.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,21 +29,44 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 300,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 249,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "chassis.cpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\chassis.cpp",
+              "RelativeDocumentMoniker": "Blank Project\\chassis.cpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\chassis.cpp",
+              "RelativeToolTip": "Blank Project\\chassis.cpp",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-21T07:18:26.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "chassis.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\chassis.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\chassis.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\chassis.hpp",
+              "RelativeToolTip": "Blank Project\\chassis.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-21T07:10:58.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "networking2.hpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp",
               "RelativeDocumentMoniker": "Blank Project\\networking2.hpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\networking2.hpp",
               "RelativeToolTip": "Blank Project\\networking2.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAADgv4kBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-19T07:24:55.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T07:24:55.184Z"
             },
             {
               "$type": "Document",
@@ -51,43 +78,20 @@
               "RelativeToolTip": "Blank Project\\shapeDefiner.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T06:46:17.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T06:46:17.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "machine.hpp",
-              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp",
-              "RelativeDocumentMoniker": "Blank Project\\machine.hpp",
-              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\machine.hpp",
-              "RelativeToolTip": "Blank Project\\machine.hpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T05:20:29.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp",
               "RelativeDocumentMoniker": "Blank Project\\main.cpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\V1vV2\\V1vV2\\Blank Project\\main.cpp",
               "RelativeToolTip": "Blank Project\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-01T05:18:33.377Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 80,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

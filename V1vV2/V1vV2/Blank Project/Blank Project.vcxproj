@@ -134,8 +134,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chassis.cpp" />
+    <ClCompile Include="chassis.hpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="networking.hpp" />
     <ClCompile Include="shapeDefiner.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,7 +145,6 @@
   <ItemGroup>
     <ClInclude Include="machine.hpp" />
     <ClInclude Include="networking2.hpp" />
-    <ClInclude Include="packVar.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
