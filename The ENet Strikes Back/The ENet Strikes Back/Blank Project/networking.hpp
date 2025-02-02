@@ -186,7 +186,7 @@ class Client : public MotherOfTheTrucker
 		}
 
 		enet_address_set_host(&address, connectAddress.c_str());
-		address.port = 7777;
+		address.port = 11775;
 
 		peer = enet_host_connect(client, &address, 1, 0);
 		if (peer == NULL)
@@ -272,7 +272,7 @@ class Server : public MotherOfTheTrucker
 		atexit(enet_deinitialize);
 
 		address.host = ENET_HOST_ANY;
-		address.port = 7777;
+		address.port = 11775;
 
 		server = enet_host_create(&address, 3, 1, 0, 0);
 

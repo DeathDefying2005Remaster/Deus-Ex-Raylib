@@ -43,7 +43,7 @@ class InputField
 		if (active)
 		{
 			int key = GetKeyPressed();
-			if (key - 48 >= 0 && key - 48 <= 9 && text.length() < 13) { text += to_string(key - 48); }
+			if (key - 48 >= 0 && key - 48 <= 9 && text.length() < 15) { text += to_string(key - 48); }
 			else if (key == 46 && text.length() > 0 && text.at(text.length() - 1) != '.' && text.length() < 13) { text += '.'; }
 			else if (key == 259 && text.length() > 0) { text.erase(text.length() - 1); }
 		}

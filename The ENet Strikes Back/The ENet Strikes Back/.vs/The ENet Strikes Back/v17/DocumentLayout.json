@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\networking.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\inputField.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\inputField.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\inputField.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\inputField.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,46 +32,35 @@
               "RelativeDocumentMoniker": "Blank Project\\networking.hpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\networking.hpp",
               "RelativeToolTip": "Blank Project\\networking.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAFcBAAAAAAAAAADwv2sBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-19T11:06:44.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\main.cpp",
               "RelativeDocumentMoniker": "Blank Project\\main.cpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\main.cpp",
               "RelativeToolTip": "Blank Project\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-19T07:36:21.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "inputField.hpp",
               "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\inputField.hpp",
               "RelativeDocumentMoniker": "Blank Project\\inputField.hpp",
               "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\The ENet Strikes Back\\The ENet Strikes Back\\Blank Project\\inputField.hpp",
               "RelativeToolTip": "Blank Project\\inputField.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-19T09:41:01.163Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1524,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-01-19T09:41:01.163Z"
             }
           ]
         }
