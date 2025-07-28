@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\ui_things.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\ui_things.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\global.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\global.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\global.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\global.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\track.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\track.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\input_field.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\input_field.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\main2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\main2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\note.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75E45925-BC78-4EF5-AE1E-E59AAA549516}|Blank Project\\Blank Project.vcxproj|solutionrelative:Blank Project\\note.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\main.cpp",
+              "RelativeDocumentMoniker": "Blank Project\\main.cpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\main.cpp",
+              "RelativeToolTip": "Blank Project\\main.cpp",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvywBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-18T08:16:36.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main2.cpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\main2.cpp",
+              "RelativeDocumentMoniker": "Blank Project\\main2.cpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\main2.cpp",
+              "RelativeToolTip": "Blank Project\\main2.cpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAADwv5gAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-06T22:34:35.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ui_things.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\ui_things.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\ui_things.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\ui_things.hpp",
+              "RelativeToolTip": "Blank Project\\ui_things.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-16T10:28:50.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "global.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\global.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\global.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\global.hpp",
+              "RelativeToolTip": "Blank Project\\global.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-17T00:25:27.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "global.cpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\global.cpp",
+              "RelativeDocumentMoniker": "Blank Project\\global.cpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\global.cpp",
+              "RelativeToolTip": "Blank Project\\global.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-17T08:00:00.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "track.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\track.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\track.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\track.hpp",
+              "RelativeToolTip": "Blank Project\\track.hpp",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAJwAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-18T08:48:46.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "note.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\note.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\note.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\note.hpp",
+              "RelativeToolTip": "Blank Project\\note.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-19T10:36:15.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "input_field.hpp",
+              "DocumentMoniker": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\input_field.hpp",
+              "RelativeDocumentMoniker": "Blank Project\\input_field.hpp",
+              "ToolTip": "C:\\Games and Stuf\\Coding\\RayLib\\NoteCharter\\NoteCharter\\Blank Project\\input_field.hpp",
+              "RelativeToolTip": "Blank Project\\input_field.hpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-20T08:20:06.597Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

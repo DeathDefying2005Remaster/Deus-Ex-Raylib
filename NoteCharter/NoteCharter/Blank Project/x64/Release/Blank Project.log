@@ -1,0 +1,74 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (Blank Project.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\raygui.h(2654,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\ui_things.hpp(94,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\ui_things.hpp(94,72): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\ui_things.hpp(94,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\ui_things.hpp(94,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(58,30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(66,75): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(68,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(93,80): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(144,118): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(149,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(149,61): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(149,32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(149,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\track.hpp(150,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\input_field.hpp(112,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\input_field.hpp(113,91): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\input_field.hpp(113,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\input_field.hpp(113,38): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(93,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(98,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(151,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(169,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(171,34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(219,36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(237,36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\Blank Project\main.cpp(241,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  1 of 565 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Blank Project.vcxproj -> C:\Games and Stuf\Coding\RayLib\NoteCharter\NoteCharter\x64\Release\NoteCharter.exe
