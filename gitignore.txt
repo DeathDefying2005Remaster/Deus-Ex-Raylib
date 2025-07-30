@@ -70,3 +70,4 @@ dkms.conf
 *.wav
 *.mp3
 *.ogg
+*.ipch
