@@ -47,3 +47,5 @@ Meanwhile, the first Jesus says "I'll cure it soon
 Abolish Monday mornings and Friday afternoons"
 The other one's out on hunger strike, he's dying by degrees
 How come Jesus gets industrial disease?
+
+![alt text](hosp.gif)
